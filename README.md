@@ -9,7 +9,7 @@ This repository contains details about the **bioinformatics project** as part of
 ## Project Overview
 
 ### 1. Data Retrieval
-The mouse microarray dataset with the the accession ID **[GSE52509](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52509)** was accessed through the **National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO)**. 
+The mouse microarray dataset with the accession ID **[GSE52509](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52509)** was accessed through the **National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO)**. 
 - Data retrieval was conducted using the **GEOquery** R package.
 - **Sample groups:** 4 month Control, 4 month CS-exposed samples, 6 month Control, and 6 month CS-exposed samples (n=3 per group).
 
