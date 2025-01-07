@@ -28,8 +28,8 @@ The mouse microarray dataset with the accession ID **[GSE52509](https://www.ncbi
 - R scripts can be found in this [folder](scripts).
   
 **Figures:**
-- [4 month CS-exposed vs. Control Volcano Plot](Assets/1monthCSvsAir.png)
-- [6 month CS-exposed vs. Control Volcano Plot](Assets/3monthCSvsAir.png)
+- [4 month CS-exposed vs. Control Volcano Plot](Assets/4monthCS_volcanoplot.jpg)
+- [6 month CS-exposed vs. Control Volcano Plot](Assets/6monthCS_volcanoplot.jpg)
   
   ---
 
@@ -45,7 +45,7 @@ The mouse microarray dataset with the accession ID **[GSE52509](https://www.ncbi
   
 **Figures:**
 - [Comparative GO enrichment analysis-Heatmap](Assets/HeatmapSelectedGO.png)
-- [Comparative KEGG enrichment analysis-Heatmap](Assets/HeatmapSelectedGO.png)
+- [Comparative KEGG enrichment analysis-Heatmap](Assets/HeatmapSelectedKEGG.png)
   
 ---
 
@@ -56,10 +56,10 @@ The mouse microarray dataset with the accession ID **[GSE52509](https://www.ncbi
     - Maximal clique centrality (MCC) algorithm from the cytoHubba plugin was utilized to determine the top ten hub genes in each PPI.
 
 **Figures:**
-- [StringDB Inflammatory response PPI](Assets/inflammatoryresponse_hubgene.png)
-- [Top ten hub genes in the Inflammatory response PPI](Assets/cytokineproduction_hubgene.png)
-- [StringDB Cytokine-cytokine receptor interaction PPI](Assets/chemotaxis_regulation_hubgene.png)
-- [Top ten hub genes in the Cytokine-cytokine receptor interaction PPI](Assets/cellmigration_hubgenes.png)
+- [StringDB Inflammatory response PPI](Assets/stringdb_inflammatoryreponserPPI_144terms.png)
+- [Top ten hub genes in the Inflammatory response PPI](Assets/inflammatoryresponse_hubgene.png)
+- [StringDB Cytokine-cytokine receptor interaction PPI](Assets/stringdb_cytokine-cytokine_PPI_36terms.png)
+- [Top ten hub genes in the Cytokine-cytokine receptor interaction PPI](Assets/cytokine-cytokine_hubgene.png)
 
   
 ---
@@ -97,6 +97,6 @@ If you use the tools or dataset mentioned in this repository in your research, p
 
 ---
 
-For questions or issues, please contact the repository maintainer. Refer to the [final course report](Assets/Easwaran_Meena_Journal_paper.pdf) for detailed information and results.
+For questions or issues, please contact the repository maintainer. Refer to the [final course report](Assets/Project_Component5_Final_Report_Meena_Easwaran.pdf) for detailed information and results.
 
 This repository is **strictly for educational purposes and serves as a backup** for my graduate school assignments related to the **BMI 5333: Systems Medicine: Principles and Practice** course at McWilliams School of Biomedical Informatics at UTHealth Houston.
