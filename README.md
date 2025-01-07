@@ -75,6 +75,8 @@ If you use the tools or dataset mentioned in this repository in your research, p
 
 - Chin, C. H., Chen, S. H., Wu, H. H., Ho, C. W., Ko, M. T., & Lin, C. Y. (2014). cytoHubba: Identifying hub objects and sub-networks from complex interactome. BMC Systems Biology, 8(4), 1–7. https://doi.org/10.1186/1752-0509-8-S4-S11/TABLES/4
 
+- John-Schuster, G., Hager, K., Conlon, T. M., Irmler, M., Beckers, J., Eickelberg, O., & Yildirim, A. Ö. (2014). Cigarette smoke-induced iBALT mediates macrophage activation in a B cell-dependent manner in COPD. American journal of physiology. Lung cellular and molecular physiology, 307(9), L692–L706. https://doi.org/10.1152/ajplung.00092.2014
+
 - Kanehisa, M. (2019). Toward understanding the origin and evolution of cellular organisms. Protein Science, 28(11), 1947–1951. https://doi.org/10.1002/PRO.3715
   
 - Kanehisa, M., Furumichi, M., Sato, Y., Kawashima, M., & Ishiguro-Watanabe, M. (2023). KEGG for taxonomy-based analysis of pathways and genomes. Nucleic Acids Research, 51(D1), D587–D592. https://doi.org/10.1093/NAR/GKAC963
