@@ -99,4 +99,4 @@ If you use the tools or dataset mentioned in this repository in your research, p
 
 For questions or issues, please contact the repository maintainer. Refer to the [final course report](Assets/Project_Component5_Final_Report_Meena_Easwaran.pdf) for detailed information and results.
 
-This repository is **strictly for educational purposes and serves as a backup** for my graduate school assignments related to the **BMI 5333: Systems Medicine: Principles and Practice** course at McWilliams School of Biomedical Informatics at UTHealth Houston.
+This repository is **solely for educational purposes and serves as a backup** for my graduate school assignments related to the **BMI 5333: Systems Medicine: Principles and Practice** course at McWilliams School of Biomedical Informatics at UTHealth Houston.
