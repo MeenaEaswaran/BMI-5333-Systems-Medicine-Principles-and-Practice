@@ -1,14 +1,15 @@
 # BMI 5333: Systems Medicine: Principles and Practice
 
-This repository contains details about the **bioinformatics project performed using StringDB, Cytoscape, and ImmuneCellAI** as part of the BMI 5311: Foundations of Biomedical Information Sciences II course. The study, titled **"Identification of immunomodulatory hub genes and cell signatures in mouse lungs exposed to cigarette smoke: An integrated bioinformatic analysis using StringDB, Cytoscape, and ImmuneCellAI"**, analyzed the temporal variations in gene expression in mouse lungs subjected to different durations of CS exposure, ranging from one day to nine months, focusing on differentially expressed genes (DEGs), pathway enrichment, and immune-related hub gene identification using a publicly available Bulk RNA sequencing dataset obtained from NCBI GEO.
+This repository contains details about the **bioinformatics project** as part of the BMI 5333: Systems Medicine: Principles and Practice course. The study, titled **Microarray-based Transcriptomic Analysis and Signature Extraction in Mice Lungs following 4 and 6 months of Cigarette Smoke (CS) Exposure**, aims to investigate the transcriptomic changes in gene expression in mouse lung tissue resulting from prolonged exposure to CS at different time intervals of four and six months, focusing on differentially expressed genes (DEGs), pathway enrichment, network analysis and hub gene identification using a publicly available microarray dataset obtained from NCBI GEO.
 
 ---
-# Identification of immunomodulatory hub genes and cell signatures in mouse lungs exposed to cigarette smoke: An integrated bioinformatic analysis using StringDB, Cytoscape, and ImmuneCellAI
+
+# Microarray-based Transcriptomic Analysis and Signature Extraction in Mice Lungs following 4 and 6 months of Cigarette Smoke Exposure
 
 ## Project Overview
 
 ### 1. Data Retrieval
-The mouse  Bulk RNA sequencing datase with the the accession ID **[GSE76205](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76205)** was accessed through the **National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO)**. 
+The mouse microarray dataset with the accession ID **[GSE76205](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76205)** was accessed through the **National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO)**. 
 - Raw and normalized count data wer retrieved using the NIH LINCS tool **[GREIN:GEO RNA-seq Experiments Interactive Navigator](https://www.ilincs.org/apps/grein/?gse=)**.
 
 - **Sample groups and sizes:**
