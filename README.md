@@ -16,7 +16,7 @@ The mouse microarray dataset with the accession ID **[GSE52509](https://www.ncbi
 ---
 
 ### 2. Differential Expression Analysis
-- **Tools used:** limma R package for differential expression analysis and EnhancedVolcano R package.
+- **Tools used:** limma R package for differential expression analysis and EnhancedVolcano R package for data visualization.
     
   1. 4 month CS-exposed vs. Control
   2. 6 month CS-exposed vs. Control
