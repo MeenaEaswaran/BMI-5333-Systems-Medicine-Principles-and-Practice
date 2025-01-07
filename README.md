@@ -9,26 +9,17 @@ This repository contains details about the **bioinformatics project** as part of
 ## Project Overview
 
 ### 1. Data Retrieval
-The mouse microarray dataset with the accession ID **[GSE76205](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76205)** was accessed through the **National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO)**. 
-- Raw and normalized count data wer retrieved using the NIH LINCS tool **[GREIN:GEO RNA-seq Experiments Interactive Navigator](https://www.ilincs.org/apps/grein/?gse=)**.
-
-- **Sample groups and sizes:**
-    - Regarding sample sizes, on day one, there were five samples from the control group and four from the Cigarette smmoke (CS)-exposed group.
-  - At seven days, both control and CS-exposed groups had five samples each.
-  - For the one-month and three-month intervals, the sample sizes remained consistent at five for each group.
-  - The control group comprised four samples at six and nine months, while the CS-exposed group included five. 
+The mouse microarray dataset with the the accession ID **[GSE52509](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE52509)** was accessed through the **National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO)**. 
+- Data retrieval was conducted using the **GEOquery** R package.
+- **Sample groups:** 4 month Control, 4 month CS-exposed samples, 6 month Control, and 6 month CS-exposed samples (n=3 per group).
 
 ---
 
 ### 2. Differential Expression Analysis
-- **Tools used:** DESeq2 R package for differential expression analysis and EnhancedVolcano R package.
+- **Tools used:** limma R package for differential expression analysis and EnhancedVolcano R package.
     
-  1. 1 day CS-exposed vs. 1 day Control
-  2. 7 day CS-exposed vs. 7 day Control
-  3. 1 month CS-exposed vs. 1 month Control
-  4. 3 month CS-exposed vs. 3 month Control
-  5. 6 month CS-exposed vs. 6 month Control
-  6. 9 month CS-exposed vs. 9 month Control
+  1. 4 month CS-exposed vs. Control
+  2. 6 month CS-exposed vs. Control
      
  - **Criteria for Differentially Expressed Genes (DEGs):**
    - False Discovery Rate (FDR) ≤ 0.05
@@ -37,12 +28,8 @@ The mouse microarray dataset with the accession ID **[GSE76205](https://www.ncbi
 - R scripts can be found in this [folder](scripts).
   
 **Figures:**
-- [1 day CS-exposed vs. 1 day Control Volcano Plot](Assets/1dayCSvsAir.png)
-- [7 day CS-exposed vs. 7 day Control Volcano Plot](Assets/7dayCSvsAir.png)
-- [1 month CS-exposed vs. 1 month Control Volcano Plot](Assets/1monthCSvsAir.png)
-- [3 month CS-exposed vs. 3 month Control Control Volcano Plot](Assets/3monthCSvsAir.png)
-- [6 month CS-exposed vs. 6 month Control Volcano Plot](Assets/6monthCSvsAir.png)
-- [9 month CS-exposed vs. 9 month Control Volcano Plot](Assets/9monthCSvsAir.png)
+- [4 month CS-exposed vs. Control Volcano Plot](Assets/1monthCSvsAir.png)
+- [6 month CS-exposed vs. Control Volcano Plot](Assets/3monthCSvsAir.png)
   
   ---
 
@@ -57,7 +44,8 @@ The mouse microarray dataset with the accession ID **[GSE76205](https://www.ncbi
   - Minimum enrichment factor = 1.5
   
 **Figures:**
-- [Comparative functional enrichment analysis-Heatmap](Assets/HeatmapSelectedGO.png)
+- [Comparative GO enrichment analysis-Heatmap](Assets/HeatmapSelectedGO.png)
+- [Comparative KEGG enrichment analysis-Heatmap](Assets/HeatmapSelectedGO.png)
   
 ---
 
@@ -68,30 +56,12 @@ The mouse microarray dataset with the accession ID **[GSE76205](https://www.ncbi
     - Maximal clique centrality (MCC) algorithm from the cytoHubba plugin was utilized to determine the top ten hub genes in each PPI.
 
 **Figures:**
-- [Top ten hub genes in the regulation of inflammation PPI](Assets/inflammatoryresponse_hubgene.png)
-- [Top ten hub genes in the regulation of cytokine production PPI](Assets/cytokineproduction_hubgene.png)
-- [Top ten hub genes in the regulation of chemotaxis PPI](Assets/chemotaxis_regulation_hubgene.png)
-- [Top ten hub genes in the regulation of cell migration PPI](Assets/cellmigration_hubgenes.png)
-- [Top ten hub genes in the immune receptor activity PPI](Assets/immunereceptoractivity_hubgene.png)
-- [Top ten hub genes in the lymphocyte activation PPI](Assets/lymphocyteacrtivation_hubgene.png)
-- [Top ten hub genes in the extracellular matrix PPI](Assets/ECM_hubgenes.png)
+- [StringDB Inflammatory response PPI](Assets/inflammatoryresponse_hubgene.png)
+- [Top ten hub genes in the Inflammatory response PPI](Assets/cytokineproduction_hubgene.png)
+- [StringDB Cytokine-cytokine receptor interaction PPI](Assets/chemotaxis_regulation_hubgene.png)
+- [Top ten hub genes in the Cytokine-cytokine receptor interaction PPI](Assets/cellmigration_hubgenes.png)
+
   
----
-
-### 5. ImmuneCellAI analysis
-- **Tools used:**
-  - **[ImmuneCellAI-mouse](https://guolab.wchscu.cn/ImmuCellAI-mouse//#!/)** to determine immune cell types from gene expression data.
-  - Input data were derived from normalized gene expression counts obtained via **GREIN**.
-
-- **Statistical Evaluation**
-  - **Tool used:** GraphPad Prism version 10.4
-  - **Analysis conducted:**
-    - Temporal dynamics of immune cell infiltration in CS-exposed mouse lungs.
-    - A two-way analysis of variance (**ANOVA**) test, followed by a **post-hoc Tukey multiple comparison test**.
-    - 
-**Figures:**
-- [Temporal dynamics of CS-induced immune cell responses in mouse lungs](Assets/immunecellAI_gragh.jpg)
-
 ---
 
 ## Citation
@@ -113,13 +83,9 @@ If you use the tools or dataset mentioned in this repository in your research, p
 
 - Li, C., & Xu, J. (2019). Feature selection with the Fisher score followed by the Maximal Clique Centrality algorithm can accurately identify the hub genes of hepatocellular carcinoma. Scientific Reports, 9(1), 1–11. https://doi.org/10.1038/s41598-019-53471-0
 
-- Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biology, 15(12), 1–21. https://doi.org/10.1186/S13059-014-0550-8/FIGURES/9
+- Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res [Internet]. 2015 Apr 20 [cited 2023 Dec 7];43(7):e47–e47. Available from: https://dx.doi.org/10.1093/nar/gkv007
 
-- Mahi, N. Al, Najafabadi, M. F., Pilarczyk, M., Kouril, M., & Medvedovic, M. (2019). GREIN: An Interactive Web Platform for Re-analyzing GEO RNA-seq Data. Scientific Reports, 9(1). https://doi.org/10.1038/S41598-019-43935-8
-
-- Miao, Y. R., Xia, M., Luo, M., Luo, T., Yang, M., & Guo, A. Y. (2022). ImmuCellAI-mouse: a tool for comprehensive prediction of mouse immune cell abundance and immune microenvironment depiction. Bioinformatics, 38(3), 785–791. https://doi.org/10.1093/BIOINFORMATICS/BTAB711
-
-- Miller, M. A., Danhorn, T., Cruickshank-Quinn, C. I., Leach, S. M., Jacobson, S., Strand, M. J., Reisdorph, N. A., Bowler, R. P., Petrache, I., & Kechris, K. (2017). Gene and metabolite time-course response to cigarette smoking in mouse lung and plasma. PLoS ONE, 12(6), e0178281. https://doi.org/10.1371/JOURNAL.PONE.0178281
+- Sean D, Meltzer PS. GEOquery: a bridge between the Gene Expression Omnibus (GEO) and BioConductor. Bioinformatics [Internet]. 2007 Jul 15 [cited 2023 Dec 7];23(14):1846–7. Available from: https://dx.doi.org/10.1093/bioinformatics/btm254
 
 - Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., Amin, N., Schwikowski, B., & Ideker, T. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research, 13(11), 2498–2504. https://doi.org/10.1101/GR.1239303
 
@@ -129,6 +95,6 @@ If you use the tools or dataset mentioned in this repository in your research, p
 
 ---
 
-For questions or issues, please contact the repository maintainer. Refer to the [final class paper](Assets/Easwaran_Meena_Journal_paper.pdf) for detailed information and results.
+For questions or issues, please contact the repository maintainer. Refer to the [final course report](Assets/Easwaran_Meena_Journal_paper.pdf) for detailed information and results.
 
 This repository is **strictly for educational purposes and serves as a backup** for my graduate school assignments related to the **BMI 5333: Systems Medicine: Principles and Practice** course at McWilliams School of Biomedical Informatics at UTHealth Houston.
